@@ -1,27 +1,7 @@
 <div class="main">
-<app-paragraph title="About Me" content="Hello, I'm Sergiusz Kot.I am young energetic person who looks for a position of software tester. I would like
-to develop my skills in this area.
-"></app-paragraph>
-<app-paragraph title="Skills" content="Experience and knowledge of Windows, Linux, JavaScript, jQuery, SQL, HTML, CSS,
-Bootstrap, Photoshop, Adobe XD, command line tools and scripting
-Knowledge of debug consoles of common browsers
-Excellent eye for details
-High communication skills
-Analytical thinking ability
-Ability to learn new software quickly"></app-paragraph>
-<app-paragraph title="Expierence" content="Feb 2019 - May 2019
-PRO-INTERNET Gdańsk - Service technician
-Fiber optic networks, LAN/WAN services, routers and switches set up"></app-paragraph>
-<app-paragraph title="" content="Sep 2017 - Apr 2018
-INONET Gdańsk - FTTH technician
-Installation of Internet Network and television services"></app-paragraph>
-<app-paragraph title="Education" content="2018 - currently
-Państwowa Wyższa Szkoła Zawodowa, Elbląg - Information technology "></app-paragraph>
-<app-paragraph title="" content="2013 - 2017
-Zespół Szkół Mechanicznych, Elbląg - Information technology"></app-paragraph>
-<app-paragraph title="Certificates" content="Codeacademy - SQL, HTML, CSS, Responsive Design, JavaScript, Sass
-"></app-paragraph>
-<app-paragraph title="" content="OKE Łomża - Diploma in Information Technology"></app-paragraph>
-<app-paragraph title="Languages" content="English B1 (writing, reading, speaking)"></app-paragraph>
-<app-paragraph title="Hobby" content="Programming, technology news, playing chess, volleyball, speed skating, cycling"></app-paragraph>
+    <app-paragraph
+        *ngFor="let item of paragraphs"
+        [title]="item.title"
+        [content]="item.content">
+    </app-paragraph>
 </div>

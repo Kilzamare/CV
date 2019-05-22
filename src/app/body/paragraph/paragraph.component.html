@@ -1,2 +1,6 @@
 <span class="y">{{title}}</span>
-<span class="c">{{content}}</span>
+<span class="c">
+    <ul>
+        <li *ngFor="let item of content">{{ item }}</li>
+    </ul>
+</span>

@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ParagraphComponent implements OnInit {
   @Input() title: string;
-  @Input() content: string;
+  @Input() content: Array<string>;
   
   constructor() { }
 
